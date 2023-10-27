@@ -4,7 +4,7 @@ import NotFoundContainer from '../layouts/notFound';
 
 import useScreen from '../hooks/useScreen';
 
-import { ContentsContainer, ContentWrapper } from '../styles/common';
+import { ContentsContainer } from '../styles/common';
 
 const NotFound = () => {
   const { expandedNavDesktop } = useScreen();

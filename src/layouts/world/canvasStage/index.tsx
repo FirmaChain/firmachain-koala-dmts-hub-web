@@ -1,6 +1,11 @@
 import React from 'react';
+import { useSnackbar } from 'notistack';
 
 import useTheme from '../../../hooks/useTheme';
+import useWallet from '../../../hooks/useWallet';
+import useModal from '../../../hooks/useModal';
+import { walletActions } from '../../../redux/action';
+
 import CardBg from '../../../components/cardBg';
 
 import {
@@ -20,6 +25,37 @@ import {
 
 const WorldCanvasStage = ({ setActiveRight }: { setActiveRight: React.Dispatch<React.SetStateAction<boolean>> }) => {
   const { theme } = useTheme();
+  const { enqueueSnackbar } = useSnackbar();
+  const { openModal } = useModal();
+  const { isLogin } = useWallet();
+
+  const onClose = (address: string, success: boolean) => {
+    walletActions.handleWalletAddress(address);
+
+    if (success) {
+      enqueueSnackbar('Successfully connected to wallet.', {
+        variant: 'success',
+        autoHideDuration: 2000,
+      });
+    } else {
+      enqueueSnackbar('failed connect to wallet.', {
+        variant: 'error',
+        autoHideDuration: 2000,
+      });
+    }
+  };
+
+  const handleWalletConnectModal = () => {
+    openModal({ type: 'walletConnect', props: { onClose } });
+  };
+
+  const onActiveRight = () => {
+    if (isLogin()) {
+      setActiveRight(true);
+    } else {
+      handleWalletConnectModal();
+    }
+  };
 
   return (
     <CanvasWrapper>
@@ -41,7 +77,7 @@ const WorldCanvasStage = ({ setActiveRight }: { setActiveRight: React.Dispatch<R
         </StageInfo>
       </StageCard>
 
-      <StageCard $active={true} onClick={() => setActiveRight(true)}>
+      <StageCard $active={true} onClick={() => onActiveRight()}>
         <CardBg />
         <StageInfo>
           <StageIconWrapper>
