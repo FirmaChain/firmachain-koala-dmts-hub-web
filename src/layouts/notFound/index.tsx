@@ -1,7 +1,7 @@
 import React from 'react';
 
 import useTheme from '../../hooks/useTheme';
-import { CHAIN_CONFIG } from '../../config';
+import useCustomNavigate from '../../hooks/useCustomNavigate';
 
 import {
   Character1,
@@ -24,9 +24,10 @@ import {
 
 const NotFound = () => {
   const { theme } = useTheme();
+  const navigate = useCustomNavigate();
 
   const onClickLanding = () => {
-    window.location.href = CHAIN_CONFIG.LANDING;
+    navigate('/');
   };
 
   return (
