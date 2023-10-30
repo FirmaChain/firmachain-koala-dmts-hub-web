@@ -61,7 +61,7 @@ const SectionEvent = () => {
                 <RewardWrapper>
                   <RewardLabelTypo>Reward</RewardLabelTypo>
                   <RewardIcon $src={theme.urls.dmtsMedal} />
-                  <RewardNameTypo>Koala Origin Emblem</RewardNameTypo>
+                  <RewardNameTypo>Koala Emblem: DMTS</RewardNameTypo>
                 </RewardWrapper>
 
                 <EventDivider />

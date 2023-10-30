@@ -100,6 +100,7 @@ const urls = {
   dummyStakingPool4: process.env.PUBLIC_URL + '/images/img_dummy_staking_pool_04.png',
   dummyChart2: process.env.PUBLIC_URL + '/images/img_dummy_chart2.png',
   dummyPool: process.env.PUBLIC_URL + '/images/img_dummy_pool.png',
+  dummyNft0: process.env.PUBLIC_URL + '/images/img_dmts_big_01.png',
   dummyNft1: process.env.PUBLIC_URL + '/images/img_dummy_nft_01.png',
   dummyNft2: process.env.PUBLIC_URL + '/images/img_dummy_nft_02.png',
   dummyNft3: process.env.PUBLIC_URL + '/images/img_dummy_nft_03.png',

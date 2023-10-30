@@ -66,7 +66,7 @@ const CardNonNft = ({ setActiveSendModal, nftList }: IProps) => {
         </InvenTopInfo>
         <InvenItemList>
           {nftList.map((nft, index) => (
-            <InvenItem $status={0} key={index} onClick={() => handleDetailModal(0, nft)}>
+            <InvenItem $status={1} $selected={true} key={index} onClick={() => handleDetailModal(0, nft)}>
               <InvenItemImage src={nft.imageURI} />
               <InvenItemId>{`#${nft.nftId}`}</InvenItemId>
             </InvenItem>

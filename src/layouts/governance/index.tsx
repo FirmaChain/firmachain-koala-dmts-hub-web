@@ -50,8 +50,8 @@ const Governance = () => {
               <CommingsoonLabelTypo>COMMING SOON</CommingsoonLabelTypo>
             </TopTitleWrapper>
             <DescriptionTypo>
-              Explore fun web3 protocols and projects with Phi Quest! Every quest teaches you a little bit more about
-              web3
+              By staking on Koala-Fi and using gKOA, you can influence Koala Knights' governance, including voting on
+              new characters and dungeon attributes.
             </DescriptionTypo>
           </TopWrapper>
           <BottomWrapper>
@@ -71,12 +71,12 @@ const Governance = () => {
                     </VoteImage>
                     <GovMessageBox>
                       <GovMessageTypo1>NECESSARY</GovMessageTypo1>
-                      <GovMessageTypo2>MY GFCT</GovMessageTypo2>
+                      <GovMessageTypo2>MY gKOA</GovMessageTypo2>
                     </GovMessageBox>
                   </VoteWrapper>
                 </DescriptionContents>
                 <IntroDescriptionTypo>
-                  Explore fun web3 protocols and projects Every quest teaches you a little bit more about web3
+                  If you hold 'gKOA', you are entitled to participate in Koala Knights' governance.
                 </IntroDescriptionTypo>
               </IntroDescriptionWrapper>
             </IntroItem>
@@ -96,7 +96,7 @@ const Governance = () => {
                   </LinkWrapper>
                 </DescriptionContents>
                 <IntroDescriptionTypo>
-                  Explore fun web3 protocols and projects Every quest teaches you a little bit more about web3
+                  By providing liquidity to Koala-Fi's LP-POOL, one can acquire the 'gKOA' token.
                 </IntroDescriptionTypo>
               </IntroDescriptionWrapper>
             </IntroItem>

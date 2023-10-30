@@ -86,12 +86,12 @@ const StakingDetail = ({ subType }: IProps) => {
       <DelegationValueList>
         <DelegationValueItem>
           <DelegationValueIcon $src={theme.urls.stakingFCT} />
-          <DelegationValueTypo>8888888.888</DelegationValueTypo>
+          <DelegationValueTypo>14,150.543123</DelegationValueTypo>
           <DelegationValueCurrency>FCT</DelegationValueCurrency>
         </DelegationValueItem>
         <DelegationValueItem>
           <DelegationValueIcon $src={theme.urls.stakingKOA} />
-          <DelegationValueTypo>8888888.888</DelegationValueTypo>
+          <DelegationValueTypo>324,550.984120</DelegationValueTypo>
           <DelegationValueCurrency>KOA</DelegationValueCurrency>
         </DelegationValueItem>
       </DelegationValueList>

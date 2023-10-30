@@ -92,9 +92,9 @@ const Quest = () => {
                   <QuestProcessWrapper>
                     <QuestProcessTypo>Process</QuestProcessTypo>
                     <QuestProcessValue>
-                      <QuestProcessCurrentTypo>3</QuestProcessCurrentTypo>
+                      <QuestProcessCurrentTypo>4</QuestProcessCurrentTypo>
                       <QuestProcessDivider>/</QuestProcessDivider>
-                      <QuestProcessTargetTypo>4</QuestProcessTargetTypo>
+                      <QuestProcessTargetTypo>5</QuestProcessTargetTypo>
                     </QuestProcessValue>
                   </QuestProcessWrapper>
                   <QuestProcessGuage>
@@ -158,9 +158,25 @@ const Quest = () => {
                     <QuestDesc>
                       <QuestNameTypo>Boss Kill</QuestNameTypo>
                       <QuestSubProcessValue>
-                        <QuestSubProcessCurrentTypo>0</QuestSubProcessCurrentTypo>
+                        <QuestSubProcessCurrentTypo>1</QuestSubProcessCurrentTypo>
                         <QuestSubProcessDivider>/</QuestSubProcessDivider>
                         <QuestSubProcessTargetTypo>1</QuestSubProcessTargetTypo>
+                      </QuestSubProcessValue>
+                    </QuestDesc>
+                    <QuestSubDivider />
+                    <QuestReward>
+                      <QuestRewardIcon />
+                      <QuestRewardValue>300</QuestRewardValue>
+                    </QuestReward>
+                  </QuestSubItem>
+                  <QuestSubItem>
+                    <QuestSubIcon />
+                    <QuestDesc>
+                      <QuestNameTypo>Obtain Koala Coins</QuestNameTypo>
+                      <QuestSubProcessValue>
+                        <QuestSubProcessCurrentTypo>10</QuestSubProcessCurrentTypo>
+                        <QuestSubProcessDivider>/</QuestSubProcessDivider>
+                        <QuestSubProcessTargetTypo>20</QuestSubProcessTargetTypo>
                       </QuestSubProcessValue>
                     </QuestDesc>
                     <QuestSubDivider />
@@ -185,9 +201,9 @@ const Quest = () => {
                   <QuestProcessWrapper>
                     <QuestProcessTypo>Process</QuestProcessTypo>
                     <QuestProcessValue>
-                      <QuestProcessCurrentTypo>4</QuestProcessCurrentTypo>
+                      <QuestProcessCurrentTypo>5</QuestProcessCurrentTypo>
                       <QuestProcessDivider>/</QuestProcessDivider>
-                      <QuestProcessTargetTypo>4</QuestProcessTargetTypo>
+                      <QuestProcessTargetTypo>5</QuestProcessTargetTypo>
                     </QuestProcessValue>
                   </QuestProcessWrapper>
                   <QuestProcessGuage>
@@ -262,8 +278,25 @@ const Quest = () => {
                       <QuestRewardValue>300</QuestRewardValue>
                     </QuestReward>
                   </QuestSubItem>
+
+                  <QuestSubItem>
+                    <QuestSubIcon />
+                    <QuestDesc>
+                      <QuestNameTypo>Obtain Koala Coins</QuestNameTypo>
+                      <QuestSubProcessValue>
+                        <QuestSubProcessCurrentTypo>50</QuestSubProcessCurrentTypo>
+                        <QuestSubProcessDivider>/</QuestSubProcessDivider>
+                        <QuestSubProcessTargetTypo>50</QuestSubProcessTargetTypo>
+                      </QuestSubProcessValue>
+                    </QuestDesc>
+                    <QuestSubDivider />
+                    <QuestReward>
+                      <QuestRewardIcon />
+                      <QuestRewardValue>300</QuestRewardValue>
+                    </QuestReward>
+                  </QuestSubItem>
                 </QuestSubList>
-                <QuestDetailButton>Go Daily quest</QuestDetailButton>
+                <QuestDetailButton>Go Hub quest</QuestDetailButton>
               </QuestBottomWrapper>
             </QuestItem>
           </QuestList>

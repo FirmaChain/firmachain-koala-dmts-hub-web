@@ -28,7 +28,7 @@ export const TopLeftWrapper = styled.div`
 export const PoolImage = styled.div`
   width: 100%;
   height: 100%;
-  background-image: url('${({ theme }) => theme.urls.dummyPool}');
+  background-image: url('${({ theme }) => theme.urls.dummyStakingPool1}');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

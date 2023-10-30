@@ -10,6 +10,8 @@ import useModal from '../../../hooks/useModal';
 
 import { rootState } from '../../../redux/reducers';
 import { walletActions } from '../../../redux/action';
+import { createTextEllipsis } from '../../../utils/common';
+import { FIRMACHAIN } from '../../../constant/common';
 
 import {
   TopSectionContainer,
@@ -92,7 +94,7 @@ const SectionTop = () => {
       <TopContainer>
         <TopLogoContainer>
           <LogoImage src={theme.urls.homeSectionTopLogo} />
-          <SubLogoContainer>
+          <SubLogoContainer onClick={() => window.open(FIRMACHAIN)}>
             <SubLogoImage1 src={theme.urls.homeSectionTopLogoSub1} />
             <SubLogoImage2 src={theme.urls.homeSectionTopLogoSub2} />
             <FCTLogo src={theme.urls.homeSectionTopLogoFCT} />
@@ -112,7 +114,7 @@ const SectionTop = () => {
           <CharacterInfoWrapper>
             {address ? (
               <>
-                <CharacterInfoTypo>Lv 1. KoalaKnight</CharacterInfoTypo>
+                <CharacterInfoTypo>Lv 1. {createTextEllipsis(address, 9, 6)}</CharacterInfoTypo>
                 <CharacterInfoSubTypo>POINT : 0</CharacterInfoSubTypo>
               </>
             ) : (

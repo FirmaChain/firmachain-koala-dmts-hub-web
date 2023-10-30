@@ -28,12 +28,12 @@ const StakingDetail = ({ subType }: IProps) => {
         <RewardValueList>
           <RewardValueItem>
             <ValueIcon $src={theme.urls.stakingFCT} />
-            <ValueTypo>8888888.888</ValueTypo>
+            <ValueTypo>142.154</ValueTypo>
             <ValueCurrency>FCT</ValueCurrency>
           </RewardValueItem>
           <RewardValueItem>
             <ValueIcon $src={theme.urls.stakingKOA} />
-            <ValueTypo>123</ValueTypo>
+            <ValueTypo>4230.110</ValueTypo>
             <ValueCurrency>KOA</ValueCurrency>
           </RewardValueItem>
         </RewardValueList>

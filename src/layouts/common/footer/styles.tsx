@@ -97,6 +97,7 @@ export const ProjectPolicy = styled.div`
 `;
 
 export const PolicyTypo = styled.div`
+  cursor: pointer;
   font-size: ${({ theme }) => theme.sizes.font15};
   font-weight: 600;
   line-height: 20px;
@@ -153,4 +154,30 @@ export const ContactItem = styled(ReactSVG)`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const FCTLogo = styled(ReactSVG)`
+  svg {
+    width: 20px;
+    height: 30px;
+    fill: #ccc !important;
+  }
+`;
+
+export const FirmachainWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+`;
+
+export const FirmachainTypo = styled.div`
+  color: #ccc;
+  font-weight: 500;
+`;
+
+export const XDivider = styled.div`
+  color: #ccc;
+  padding: 0 6px 0 4px;
 `;

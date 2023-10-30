@@ -99,7 +99,7 @@ export const CommingsoonLabelTypo = styled.div`
 
 export const DescriptionTypo = styled.div`
   width: 100%;
-  max-width: 480px;
+  max-width: 600px;
   color: ${({ theme }) => theme.colors.textPrimary};
   font-size: ${({ theme }) => theme.sizes.font16};
   font-weight: 500;
@@ -254,8 +254,8 @@ export const VoteButton = styled.div`
 
 export const GovMessageBox = styled.div`
   position: absolute;
-  top: 0;
-  right: -20px;
+  top: -3px;
+  right: -25px;
   width: 173px;
   height: 120px;
   display: flex;

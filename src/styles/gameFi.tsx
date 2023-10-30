@@ -118,6 +118,7 @@ export const StakingDetailBottomCardWrapper = styled.div`
   display: flex;
   gap: 20px;
   margin-top: 30px;
+  margin-bottom: 50px;
 `;
 
 export const SwapContainer = styled.div`

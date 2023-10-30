@@ -42,10 +42,10 @@ const StakingDetailPool = ({ subType }: IProps) => {
         </TopLeftWrapper>
         <TopRightWrapper>
           <DescriptionWrapper>
-            <PoolTitle>Treasure Cup x AI Arena</PoolTitle>
+            <PoolTitle>KOA Staking</PoolTitle>
             <PoolDescription>
-              Get ready to experience the ultimate McDonald’s® Hong Kong Chicken McNuggets adventure in McNuggets ng
-              Chicken McNuggets adventure in McNuggets
+              Stake your KOA tokens and NFTs, and earn rewards based on the staking duration. Seize this opportunity to
+              maximize your benefits!
             </PoolDescription>
             <Available>
               <AvailableTypo>STAKING ABLE</AvailableTypo>
@@ -86,12 +86,12 @@ const StakingDetailPool = ({ subType }: IProps) => {
           <StakingInfoWrapper>
             <InfoWrapper $emphasis={false}>
               <InfoTitleTypo>Total staked</InfoTitleTypo>
-              <InfoValueTypo>122234.123123</InfoValueTypo>
+              <InfoValueTypo>154,582,110</InfoValueTypo>
             </InfoWrapper>
             <InfoDivider />
             <InfoWrapper $emphasis={true}>
               <InfoTitleTypo>APR</InfoTitleTypo>
-              <InfoValueTypo>80.98%</InfoValueTypo>
+              <InfoValueTypo>72.18%</InfoValueTypo>
             </InfoWrapper>
           </StakingInfoWrapper>
         </TopRightWrapper>

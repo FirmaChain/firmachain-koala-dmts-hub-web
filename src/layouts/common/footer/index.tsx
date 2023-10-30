@@ -2,7 +2,7 @@ import React from 'react';
 
 import useTheme from '../../../hooks/useTheme';
 
-import { MEDIUM, REDDIT, TELEGRAM, TWITTER } from '../../../constant/common';
+import { FIRMACHAIN, MEDIUM, REDDIT, TELEGRAM, TWITTER } from '../../../constant/common';
 
 import {
   FooterContainer,
@@ -22,6 +22,10 @@ import {
   ContactUsTypo,
   ContactList,
   ContactItem,
+  FCTLogo,
+  FirmachainTypo,
+  XDivider,
+  FirmachainWrapper,
 } from './styles';
 
 const Footer = () => {
@@ -35,11 +39,16 @@ const Footer = () => {
             <ProjectLogoWrapper>
               <Logo1Image src={theme.urls.footerLogo1} />
               <Logo2Image src={theme.urls.footerLogo2} />
+              <XDivider>x</XDivider>
+              <FirmachainWrapper onClick={() => window.open(FIRMACHAIN)}>
+                <FCTLogo src={theme.urls.firmaLogo3} />
+                <FirmachainTypo>FIRMACHAIN</FirmachainTypo>
+              </FirmachainWrapper>
             </ProjectLogoWrapper>
             {/* <ProjectNameTypo>KOALA KNIGHT</ProjectNameTypo> */}
             <ProjectDescriptionTypo>
-              The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs).
-              Buy, sell, and discover exclusive digital items.
+              Experience the entire Koala Knights ecosystem, from gameplay to marketplace, Koala-Fi, and governance, all
+              within this Hub.
             </ProjectDescriptionTypo>
             <ProjectPolicy>
               <PolicyTypo>Terms and conditions</PolicyTypo>

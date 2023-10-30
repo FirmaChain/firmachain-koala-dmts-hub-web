@@ -28,7 +28,11 @@ const StakingPool = () => {
   const navigate = useCustomNavigate();
   const { theme } = useTheme();
 
-  const dummyList = [{ name: 'KOA Staking' }, { name: 'Weapon Staking' }, { name: 'Zem Staking' }];
+  const dummyList = [
+    { name: 'KOA Staking', apr: '72.18%', value: '154,582,110' },
+    { name: 'Weapon Staking', apr: '85.52%', value: '421,112' },
+    { name: 'Zem Staking', apr: '86.12%', value: '7,332,120' },
+  ];
 
   return (
     <BottomWrapper>
@@ -51,16 +55,16 @@ const StakingPool = () => {
                   <PoolInfoList>
                     <PoolInfo>
                       <PoolInfoLabel>APR</PoolInfoLabel>
-                      <PoolInfoValue>88.88%</PoolInfoValue>
+                      <PoolInfoValue>{v.apr}</PoolInfoValue>
                     </PoolInfo>
 
                     <PoolInfo>
                       <PoolInfoLabel>Total staked</PoolInfoLabel>
-                      <PoolInfoValue>888,888,888</PoolInfoValue>
+                      <PoolInfoValue>{v.value}</PoolInfoValue>
                     </PoolInfo>
                   </PoolInfoList>
                   <StakingButtonWrapper>
-                    <StakingButton onClick={() => navigate(`/koala-fi/staking/${v}`)}>STAKING</StakingButton>
+                    <StakingButton onClick={() => navigate(`/koala-fi/staking/0`)}>STAKING</StakingButton>
                   </StakingButtonWrapper>
                 </PoolBottomWrapper>
               </PoolItem>

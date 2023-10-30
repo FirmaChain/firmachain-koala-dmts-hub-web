@@ -90,6 +90,8 @@ export const BackgroundLogoImage = styled(ReactSVG)`
 export const SubLogoContainer = styled.div`
   width: 210px;
   height: 85px;
+  cursor: pointer;
+
   position: absolute;
   top: 85px;
   right: 0;

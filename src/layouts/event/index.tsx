@@ -70,7 +70,7 @@ const Event = ({ containerRef }: IProps) => {
           <RewardContainer>
             <RewardMainTitleTypo>Reward</RewardMainTitleTypo>
             <RewardMainIcon $src={theme.urls.dmtsMedal} />
-            <RewardMainNameTypo>Koala Origin Emblem</RewardMainNameTypo>
+            <RewardMainNameTypo>Koala Emblem: DMTS</RewardMainNameTypo>
           </RewardContainer>
         </TopBannerWrapper>
       </EventWrapper>
@@ -99,7 +99,7 @@ const Event = ({ containerRef }: IProps) => {
                 <RewardWrapper>
                   <RewardLabelTypo>Reward</RewardLabelTypo>
                   <RewardIcon $src={theme.urls.dmtsMedal} />
-                  <RewardNameTypo>Koala Origin Emblem</RewardNameTypo>
+                  <RewardNameTypo>Koala Emblem: DMTS</RewardNameTypo>
                 </RewardWrapper>
 
                 <EventDivider />
