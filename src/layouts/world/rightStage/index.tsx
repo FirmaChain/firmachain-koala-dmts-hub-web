@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSnackbar } from 'notistack';
 
 import useWallet from '../../../hooks/useWallet';
 import useTheme from '../../../hooks/useTheme';
@@ -37,11 +38,19 @@ const RightStage = ({
 }) => {
   const { theme } = useTheme();
   const { getAccessToken } = useWallet();
+  const { enqueueSnackbar } = useSnackbar();
 
   const startGame = async () => {
     const accessToken = await getAccessToken();
 
-    window.location.href = `koalaknights://${accessToken}`;
+    if (accessToken === '') {
+      enqueueSnackbar(`You've already joined the event.`, {
+        variant: 'error',
+        autoHideDuration: 2000,
+      });
+    } else {
+      window.location.href = `koalaknights://${accessToken}`;
+    }
   };
 
   return (

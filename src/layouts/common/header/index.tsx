@@ -14,7 +14,7 @@ import useWallet from '../../../hooks/useWallet';
 
 import { rootState } from '../../../redux/reducers';
 import { walletActions } from '../../../redux/action';
-import { createTextEllipsis } from '../../../utils/common';
+import { createTextEllipsis, stringToSeed } from '../../../utils/common';
 
 import {
   HeaderContainer,
@@ -82,6 +82,7 @@ import {
   NotificationDateTypo,
   EmptyNotification,
   SocialLinkIcon,
+  DemoLabel,
 } from './styles';
 
 interface IProps {
@@ -197,6 +198,7 @@ const Header = ({ background, color, borderColor }: IProps) => {
               <GuideTypo>{locationName}</GuideTypo>
             </GuideButtonWrapper>
           )}
+          <DemoLabel>DEMO VERSION</DemoLabel>
         </LeftWrapper>
         {isLogin() ? (
           <AccountWrapper $borderColor={borderColor}>
@@ -211,13 +213,15 @@ const Header = ({ background, color, borderColor }: IProps) => {
               <>
                 <RoundWrapper onClick={() => handleDropDown(1)} ref={walletButtonRef}>
                   <CurrencyIcon />
-                  <BalanceTypo>{balance}</BalanceTypo>
+                  <BalanceTypo>
+                    {balance} <span>FCT</span>
+                  </BalanceTypo>
                   <DrowdownIcon src={theme.urls.dropDown} />
                 </RoundWrapper>
                 <RoundWrapper onClick={() => handleDropDown(0)} ref={assetsButtonRef}>
                   <ProfileIcon src={theme.urls.profile} />
                   <Divider />
-                  <WalletNameTypo>KoalaKnights</WalletNameTypo>
+                  <WalletNameTypo>Koala #{stringToSeed(address)}</WalletNameTypo>
                 </RoundWrapper>
               </>
             )}
@@ -237,7 +241,7 @@ const Header = ({ background, color, borderColor }: IProps) => {
             </ProfileImageWrapper>
             <WalletInfoWrapper>
               <WalletInfo>
-                <WalletInfoNameTypo>KoalaKnights</WalletInfoNameTypo>
+                <WalletInfoNameTypo>Koala #{stringToSeed(address)}</WalletInfoNameTypo>
                 <WalletInfoAddressTypo>{createTextEllipsis(address, 8, 8)}</WalletInfoAddressTypo>
               </WalletInfo>
               <WalletInfoCopyWrapper>

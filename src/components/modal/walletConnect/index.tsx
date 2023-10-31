@@ -69,7 +69,7 @@ const WalletConnectModal = () => {
               <WalletConnectTopWrapper>
                 <WalletConnectTitleTypo>Connect to Mobile</WalletConnectTitleTypo>
                 <WalletConnectSubTitleTypo>
-                  Securely connect your wallet with the Firma Station app.
+                  Securely connect your wallet with the firmastation app.
                 </WalletConnectSubTitleTypo>
               </WalletConnectTopWrapper>
               <QrWrapper>
@@ -109,14 +109,14 @@ const WalletConnectModal = () => {
                   <GuidIconWrapper>
                     <GuideIcon src={theme.urls.wcFirma} />
                   </GuidIconWrapper>
-                  <GuideTypo>{'Firma Station\napp Open'}</GuideTypo>
+                  <GuideTypo>{'Firma station\napp open'}</GuideTypo>
                 </Guide>
                 <NextArrow src={theme.urls.back2} />
                 <Guide>
                   <GuidIconWrapper>
                     <GuideIcon src={theme.urls.wcQR} />
                   </GuidIconWrapper>
-                  <GuideTypo>{'Login after\nScaning the QR'}</GuideTypo>
+                  <GuideTypo>{'Login after\nscaning the QR'}</GuideTypo>
                 </Guide>
               </GuideStep>
               <DownloadGuide onClick={() => setStep(2)}>

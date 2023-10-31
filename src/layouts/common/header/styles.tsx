@@ -210,11 +210,16 @@ export const CurrencyIcon = styled.div`
 
 export const BalanceTypo = styled.div`
   width: 100%;
-  padding-left: 7px;
+  text-align: right;
+  padding-right: 7px;
   color: ${({ theme }) => theme.colors.textPrimary};
   font-size: ${({ theme }) => theme.sizes.font14};
   font-weight: 500;
   letter-spacing: -0.28px;
+  & > span {
+    font-size: 12px;
+    color: #666;
+  }
 `;
 
 export const DrowdownIcon = styled(ReactSVG)`
@@ -269,7 +274,7 @@ export const Divider = styled.div`
 export const WalletNameTypo = styled.div`
   width: 100%;
   color: ${({ theme }) => theme.colors.textPrimary};
-  text-align: right;
+  text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: ${({ theme }) => theme.sizes.font14};
@@ -652,4 +657,13 @@ export const SocialLinkIcon = styled(ReactSVG)`
   cursor: pointer;
   svg {
   }
+`;
+
+export const DemoLabel = styled.div`
+  padding: 10px 15px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #00000060;
 `;

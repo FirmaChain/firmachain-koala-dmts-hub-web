@@ -10,7 +10,7 @@ import useModal from '../../../hooks/useModal';
 
 import { rootState } from '../../../redux/reducers';
 import { walletActions } from '../../../redux/action';
-import { createTextEllipsis } from '../../../utils/common';
+import { stringToSeed } from '../../../utils/common';
 import { FIRMACHAIN } from '../../../constant/common';
 
 import {
@@ -114,7 +114,7 @@ const SectionTop = () => {
           <CharacterInfoWrapper>
             {address ? (
               <>
-                <CharacterInfoTypo>Lv 1. {createTextEllipsis(address, 9, 6)}</CharacterInfoTypo>
+                <CharacterInfoTypo>Lv 1. Koala #{stringToSeed(address)}</CharacterInfoTypo>
                 <CharacterInfoSubTypo>POINT : 0</CharacterInfoSubTypo>
               </>
             ) : (
