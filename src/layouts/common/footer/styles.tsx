@@ -18,7 +18,7 @@ export const FooterWrapper = styled.div`
 
   gap: 80px;
   @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMaxWidth}) {
-    margin: 0 120px;
+    margin: 0 50px;
   }
 
   @media only screen and (max-width: 750px) {

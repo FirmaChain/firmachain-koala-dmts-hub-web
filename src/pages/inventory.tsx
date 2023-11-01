@@ -20,6 +20,7 @@ const Inventory = () => {
   const { getNftList } = useWallet();
 
   const [nftList, setNftList] = useState<NftData[]>([]);
+  const [isLoading, setLoading] = useState(true);
   const [activeSendModal, setActiveSendModal] = useState(false);
 
   useEffect(() => collapsedNavDesktop(), [collapsedNavDesktop]);
@@ -27,9 +28,12 @@ const Inventory = () => {
   useEffect(() => {
     getNftList()
       .then((nftList) => {
+        setLoading(false);
         setNftList(nftList);
       })
-      .catch(() => {});
+      .catch(() => {
+        setLoading(false);
+      });
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
@@ -43,7 +47,7 @@ const Inventory = () => {
             {activeSendModal ? (
               <CardSend setActiveSendModal={setActiveSendModal} />
             ) : (
-              <CardMyNft setActiveSendModal={setActiveSendModal} nftList={nftList} />
+              <CardMyNft setActiveSendModal={setActiveSendModal} nftList={nftList} isLoading={isLoading} />
             )}
             <Character activeSendModal={activeSendModal} />
             <CardIngame />

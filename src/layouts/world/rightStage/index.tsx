@@ -49,6 +49,7 @@ const RightStage = ({
         autoHideDuration: 2000,
       });
     } else {
+      setActiveRight(false);
       window.location.href = `koalaknights://${accessToken}`;
     }
   };

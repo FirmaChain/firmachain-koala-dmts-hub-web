@@ -10,7 +10,7 @@ export const EventSectionContainer = styled.div`
   align-items: center;
 
   @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMaxWidth}) {
-    padding: 0 120px;
+    padding: 0 50px;
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMobileWidth}) {

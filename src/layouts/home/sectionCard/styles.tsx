@@ -30,7 +30,7 @@ export const SectionCardWrapper = styled.div`
     & > div:nth-child(2) {
       width: calc(50% - 10px);
     }
-    margin: 0 120px;
+    margin: 0 50px;
   }
 
   @media only screen and (max-width: 1050px) {

@@ -4,6 +4,7 @@ import useModal from '../../../hooks/useModal';
 import useTheme from '../../../hooks/useTheme';
 
 import { NftData } from '../../../interface/nft';
+import LoadingInner from '../../../components/loadingInner';
 
 import {
   InventoryCard,
@@ -32,9 +33,10 @@ import {
 interface IProps {
   setActiveSendModal: React.Dispatch<React.SetStateAction<boolean>>;
   nftList: NftData[];
+  isLoading: boolean;
 }
 
-const CardNonNft = ({ setActiveSendModal, nftList }: IProps) => {
+const CardNonNft = ({ setActiveSendModal, nftList, isLoading }: IProps) => {
   const { theme } = useTheme();
   const { openModal } = useModal();
 
@@ -53,6 +55,8 @@ const CardNonNft = ({ setActiveSendModal, nftList }: IProps) => {
         <InvenLeftCorner src={theme.urls.inventoryCorner} />
       </InvenLeftTitle>
       <InvenLeftContents>
+        {isLoading && <LoadingInner isLoading={true} />}
+
         <InvenTopInfo>
           <InvenCount>
             <InvenIcon src={theme.urls.navInventory} />

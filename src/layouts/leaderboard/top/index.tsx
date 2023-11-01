@@ -43,17 +43,17 @@ const LeaderboardTop = () => {
         <TopCardWrapper>
           <TopCard>
             <TopCardTitleTypo>TOTAL NFT</TopCardTitleTypo>
-            <TopCardValueTypo>888,888</TopCardValueTypo>
+            <TopCardValueTypo>125,203</TopCardValueTypo>
           </TopCard>
 
           <TopCard>
             <TopCardTitleTypo>JOIN USER</TopCardTitleTypo>
-            <TopCardValueTypo>10,000</TopCardValueTypo>
+            <TopCardValueTypo>85,152</TopCardValueTypo>
           </TopCard>
 
           <TopCard>
             <TopCardTitleTypo>KOA VOLUME</TopCardTitleTypo>
-            <TopCardValueTypo>123,456,789</TopCardValueTypo>
+            <TopCardValueTypo>23,152,062</TopCardValueTypo>
           </TopCard>
         </TopCardWrapper>
       </LeaderboardTopWrapper>

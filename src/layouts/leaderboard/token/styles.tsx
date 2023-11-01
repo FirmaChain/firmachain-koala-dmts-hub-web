@@ -13,7 +13,7 @@ export const CardContainer = styled.div`
   margin-bottom: 50px;
 
   @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMaxWidth}) {
-    padding: 0 120px;
+    padding: 0 50px;
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMobileWidth}) {

@@ -14,7 +14,7 @@ import useWallet from '../../../hooks/useWallet';
 
 import { rootState } from '../../../redux/reducers';
 import { walletActions } from '../../../redux/action';
-import { createTextEllipsis, stringToSeed } from '../../../utils/common';
+import { copyToClipboard, createTextEllipsis, stringToSeed } from '../../../utils/common';
 
 import {
   HeaderContainer,
@@ -109,6 +109,7 @@ const Header = ({ background, color, borderColor }: IProps) => {
 
   const [locationName, setLocationName] = useState('');
   const [isActiveBackButton, setActiveBackButton] = useState(false);
+  const [isDemo, setDemo] = useState(false);
   const [dropDownType, setDropDownType] = useState(0);
 
   const dropDownRef = useRef(null);
@@ -126,6 +127,7 @@ const Header = ({ background, color, borderColor }: IProps) => {
     }
 
     setActiveBackButton(checkActiveBackButton(paths));
+    setDemo(checkDemo(paths));
   }, [pathname]);
 
   useOutsideClick([dropDownRef, walletButtonRef, assetsButtonRef, notiButtonRef, profileButtonRef], () => {
@@ -134,6 +136,11 @@ const Header = ({ background, color, borderColor }: IProps) => {
 
   const checkActiveBackButton = (paths: string[]) => {
     return paths.length >= 2 && ['quests', 'events', 'marketplace', 'nfts'].includes(paths[0]);
+  };
+
+  const checkDemo = (paths: string[]) => {
+    console.log(paths);
+    return !(['world', 'inventory', '/'].includes(paths[0]) || paths.length === 0);
   };
 
   const handleDropDown = (type: number) => {
@@ -159,6 +166,7 @@ const Header = ({ background, color, borderColor }: IProps) => {
     walletActions.handleWalletAddress('');
     walletActions.handleWalletBalance('0');
     walletActions.handleWalletTokenBalance('0');
+    navigate('/');
   };
 
   const onClose = (address: string, success: boolean) => {
@@ -181,6 +189,13 @@ const Header = ({ background, color, borderColor }: IProps) => {
     openModal({ type: 'walletConnect', props: { onClose } });
   };
 
+  const handleCopy = () => {
+    copyToClipboard(address);
+    enqueueSnackbar('Successfully copy address.', {
+      variant: 'success',
+      autoHideDuration: 2000,
+    });
+  };
   return (
     <HeaderContainer $background={background} $borderColor={borderColor}>
       <HeaderWrapper>
@@ -198,7 +213,7 @@ const Header = ({ background, color, borderColor }: IProps) => {
               <GuideTypo>{locationName}</GuideTypo>
             </GuideButtonWrapper>
           )}
-          <DemoLabel>DEMO VERSION</DemoLabel>
+          {isDemo && <DemoLabel>DEMO VERSION</DemoLabel>}
         </LeftWrapper>
         {isLogin() ? (
           <AccountWrapper $borderColor={borderColor}>
@@ -245,7 +260,7 @@ const Header = ({ background, color, borderColor }: IProps) => {
                 <WalletInfoAddressTypo>{createTextEllipsis(address, 8, 8)}</WalletInfoAddressTypo>
               </WalletInfo>
               <WalletInfoCopyWrapper>
-                <CopyButton src={theme.urls.copy} />
+                <CopyButton src={theme.urls.copy} onClick={() => handleCopy()} />
               </WalletInfoCopyWrapper>
             </WalletInfoWrapper>
           </WalletProfileWrapper>

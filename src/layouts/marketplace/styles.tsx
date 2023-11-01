@@ -8,14 +8,6 @@ export const MarketplaceContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMaxWidth}) {
-    padding: 0 120px;
-  }
-
-  @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMobileWidth}) {
-    padding: 0 40px;
-  }
 `;
 
 export const BannerLineWrapper = styled.div`
@@ -97,7 +89,7 @@ export const BannerLineContainer = styled.div`
   justify-content: space-between;
 
   @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMaxWidth}) {
-    padding: 0 120px;
+    padding: 0 50px;
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMobileWidth}) {

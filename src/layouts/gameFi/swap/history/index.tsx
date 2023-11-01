@@ -56,21 +56,21 @@ const SwapHistory = () => {
             </HistoryType>
           </HistoryTableCell>
           <HistoryTableCell>
-            <HistoryFromTypo>0xEbf0xE3...7f0d</HistoryFromTypo>
+            <HistoryFromTypo>firmaEbf...7f0d</HistoryFromTypo>
           </HistoryTableCell>
           <HistoryTableCell>
-            <HistoryToTypo>0xEbf0xE3...7f0d</HistoryToTypo>
+            <HistoryToTypo>firmaEbf...7f0d</HistoryToTypo>
           </HistoryTableCell>
           <HistoryTableCell>
             <CurrencyContainer>
               <CurrencyWrapper>
                 <HistoryFCTIcon />
-                <HistoryCurrencyTypo>888888.888888</HistoryCurrencyTypo>
+                <HistoryCurrencyTypo>12.50281</HistoryCurrencyTypo>
               </CurrencyWrapper>
               <FromToIcon src={theme.urls.swapHistoryArrow} />
               <CurrencyWrapper>
                 <HistoryKOAIcon />
-                <HistoryCurrencyTypo>888888.888888</HistoryCurrencyTypo>
+                <HistoryCurrencyTypo>110.12</HistoryCurrencyTypo>
               </CurrencyWrapper>
             </CurrencyContainer>
           </HistoryTableCell>
@@ -89,10 +89,10 @@ const SwapHistory = () => {
             </HistoryType>
           </HistoryTableCell>
           <HistoryTableCell>
-            <HistoryFromTypo>0xEbf0xE3...7f0d</HistoryFromTypo>
+            <HistoryFromTypo>firmaEbf...7f0d</HistoryFromTypo>
           </HistoryTableCell>
           <HistoryTableCell>
-            <HistoryToTypo>0xEbf0xE3...7f0d</HistoryToTypo>
+            <HistoryToTypo>firmaEbf...7f0d</HistoryToTypo>
           </HistoryTableCell>
           <HistoryTableCell>
             <CurrencyContainer>
@@ -103,7 +103,7 @@ const SwapHistory = () => {
               <FromToIcon src={theme.urls.swapHistoryArrow} />
               <CurrencyWrapper>
                 <HistoryKOAIcon />
-                <HistoryCurrencyTypo>888.456</HistoryCurrencyTypo>
+                <HistoryCurrencyTypo>1252.456</HistoryCurrencyTypo>
               </CurrencyWrapper>
             </CurrencyContainer>
           </HistoryTableCell>
@@ -125,21 +125,21 @@ const SwapHistory = () => {
                 </HistoryType>
               </HistoryTableCell>
               <HistoryTableCell>
-                <HistoryFromTypo>0xEbf0xE3...7f0d</HistoryFromTypo>
+                <HistoryFromTypo>firmaEbf...7f0d</HistoryFromTypo>
               </HistoryTableCell>
               <HistoryTableCell>
-                <HistoryToTypo>0xEbf0xE3...7f0d</HistoryToTypo>
+                <HistoryToTypo>firmaEbf...7f0d</HistoryToTypo>
               </HistoryTableCell>
               <HistoryTableCell>
                 <CurrencyContainer>
                   <CurrencyWrapper>
                     <HistoryFCTIcon />
-                    <HistoryCurrencyTypo>888888.888888</HistoryCurrencyTypo>
+                    <HistoryCurrencyTypo>1251.10211</HistoryCurrencyTypo>
                   </CurrencyWrapper>
                   <FromToIcon src={theme.urls.swapHistoryArrow} />
                   <CurrencyWrapper>
                     <HistoryKOAIcon />
-                    <HistoryCurrencyTypo>888888.888888</HistoryCurrencyTypo>
+                    <HistoryCurrencyTypo>20120.102456</HistoryCurrencyTypo>
                   </CurrencyWrapper>
                 </CurrencyContainer>
               </HistoryTableCell>

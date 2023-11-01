@@ -173,10 +173,10 @@ const AccountAssets = () => {
                 </CurrencyWrapper>
               </ActivityTableCell>
               <ActivityTableCell>
-                <ActivityFromTypo>0xEbf03...7f0d</ActivityFromTypo>
+                <ActivityFromTypo>firmaEbf03...7f0d</ActivityFromTypo>
               </ActivityTableCell>
               <ActivityTableCell>
-                <ActivityToTypo>0xEbf03...7f0d</ActivityToTypo>
+                <ActivityToTypo>firmaEbf03...7f0d</ActivityToTypo>
               </ActivityTableCell>
               <ActivityTableCell>
                 <ActivityTimeTypo>42 minutes ago</ActivityTimeTypo>
@@ -210,10 +210,10 @@ const AccountAssets = () => {
                 </CurrencyWrapper>
               </ActivityTableCell>
               <ActivityTableCell>
-                <ActivityFromTypo>0xEbf03...7f0d</ActivityFromTypo>
+                <ActivityFromTypo>firmaEbf03...7f0d</ActivityFromTypo>
               </ActivityTableCell>
               <ActivityTableCell>
-                <ActivityToTypo>0xEbf03...7f0d</ActivityToTypo>
+                <ActivityToTypo>firmaEbf03...7f0d</ActivityToTypo>
               </ActivityTableCell>
               <ActivityTableCell>
                 <ActivityTimeTypo>42 minutes ago</ActivityTimeTypo>
@@ -247,10 +247,10 @@ const AccountAssets = () => {
                 </CurrencyWrapper>
               </ActivityTableCell>
               <ActivityTableCell>
-                <ActivityFromTypo>0xEbf03...7f0d</ActivityFromTypo>
+                <ActivityFromTypo>firmaEbf03...7f0d</ActivityFromTypo>
               </ActivityTableCell>
               <ActivityTableCell>
-                <ActivityToTypo>0xEbf03...7f0d</ActivityToTypo>
+                <ActivityToTypo>firmaEbf03...7f0d</ActivityToTypo>
               </ActivityTableCell>
               <ActivityTableCell>
                 <ActivityTimeTypo>42 minutes ago</ActivityTimeTypo>
@@ -279,10 +279,10 @@ const AccountAssets = () => {
               </ActivityTableCell>
               <ActivityTableCell>---</ActivityTableCell>
               <ActivityTableCell>
-                <ActivityFromTypo>0xEbf03...7f0d</ActivityFromTypo>
+                <ActivityFromTypo>firmaEbf03...7f0d</ActivityFromTypo>
               </ActivityTableCell>
               <ActivityTableCell>
-                <ActivityToTypo>0xEbf03...7f0d</ActivityToTypo>
+                <ActivityToTypo>firmaEbf03...7f0d</ActivityToTypo>
               </ActivityTableCell>
               <ActivityTableCell>
                 <ActivityTimeTypo>42 minutes ago</ActivityTimeTypo>
@@ -319,10 +319,10 @@ const AccountAssets = () => {
                     </CurrencyWrapper>
                   </ActivityTableCell>
                   <ActivityTableCell>
-                    <ActivityFromTypo>0xEbf03...7f0d</ActivityFromTypo>
+                    <ActivityFromTypo>firmaEbf03...7f0d</ActivityFromTypo>
                   </ActivityTableCell>
                   <ActivityTableCell>
-                    <ActivityToTypo>0xEbf03...7f0d</ActivityToTypo>
+                    <ActivityToTypo>firmaEbf03...7f0d</ActivityToTypo>
                   </ActivityTableCell>
                   <ActivityTableCell>
                     <ActivityTimeTypo>42 minutes ago</ActivityTimeTypo>

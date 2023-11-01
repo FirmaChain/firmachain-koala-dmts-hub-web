@@ -18,7 +18,7 @@ import { MainContainer } from './styles/common';
 import MobileGuideLine from './layouts/mobile';
 
 function App() {
-  const { isSmall, isMobile, isDesktopNavCollapsed } = useScreen();
+  const { isXSmall, isSmall, isMobile, isDesktopNavCollapsed } = useScreen();
   const [loaded, setLoad] = useState(false);
 
   useViewport();
@@ -31,7 +31,7 @@ function App() {
   return (
     <BrowserRouter>
       <MainContainer $isSmall={isSmall} $isMobile={isMobile} $isDesktopNavCollapsed={isDesktopNavCollapsed}>
-        {isSmall ? (
+        {isXSmall ? (
           <MobileGuideLine />
         ) : (
           <React.Fragment>

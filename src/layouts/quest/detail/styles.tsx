@@ -9,7 +9,7 @@ export const QuestDetailContainer = styled.div`
   align-items: center;
 
   @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMaxWidth}) {
-    padding: 70px 120px;
+    padding: 70px 50px;
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMobileWidth}) {

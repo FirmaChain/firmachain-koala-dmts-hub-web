@@ -1,6 +1,8 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 import useTheme from '../../../hooks/useTheme';
+import { rootState } from '../../../redux/reducers';
 
 import {
   ProfileContainer,
@@ -14,9 +16,11 @@ import {
   ProfileAddressTypo,
   ShareButton,
 } from './styles';
+import { createTextEllipsis, stringToSeed } from '../../../utils/common';
 
 const AccountProfile = () => {
   const { theme } = useTheme();
+  const { address } = useSelector((state: rootState) => state.wallet);
 
   return (
     <ProfileContainer>
@@ -26,10 +30,10 @@ const AccountProfile = () => {
         </ProfileImageWrapper>
         <ProfileNameWrapper>
           <ProfileName>
-            <ProfileNameTypo>Unnamed</ProfileNameTypo>
+            <ProfileNameTypo>Koala #{stringToSeed(address)}</ProfileNameTypo>
             <ProfileEditButton src={theme.urls.editProfile} />
           </ProfileName>
-          <ProfileAddressTypo>{'firma1p90...qz0pccc'}</ProfileAddressTypo>
+          <ProfileAddressTypo>{createTextEllipsis(address, 8, 9)}</ProfileAddressTypo>
         </ProfileNameWrapper>
         <ShareButton src={theme.urls.share} />
       </ProfileInfo>

@@ -1,6 +1,9 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 import useTheme from '../../../hooks/useTheme';
+import { rootState } from '../../../redux/reducers';
+import { createTextEllipsis, stringToSeed } from '../../../utils/common';
 
 import {
   CardContainer,
@@ -34,6 +37,7 @@ import {
 } from './styles';
 
 const LeaderboardToken = () => {
+  const { address } = useSelector((state: rootState) => state.wallet);
   const { theme } = useTheme();
 
   return (
@@ -73,18 +77,20 @@ const LeaderboardToken = () => {
                     <ProfileWrapper>
                       <ProfileIcon $src={theme.urls.leaderboardProfile} />
                       <ProfileInfo $active={index === 0}>
-                        <NickNameTypo>KoalaKnights</NickNameTypo>
-                        <AddressTypo>04df9e8f9...s89ef</AddressTypo>
+                        <NickNameTypo>{index === 0 ? `Koala #${stringToSeed(address)}` : `KoalaKnights`}</NickNameTypo>
+                        <AddressTypo>
+                          {index === 0 ? createTextEllipsis(address, 8, 9) : 'firma1f9...s89eeifjsf'}
+                        </AddressTypo>
                       </ProfileInfo>
                     </ProfileWrapper>
                   </RankTableCell>
                   <RankTableCell>
-                    <PoolNameTypo>Treasure Cup x AI Arena..</PoolNameTypo>
+                    <PoolNameTypo>KOA Staking</PoolNameTypo>
                   </RankTableCell>
                   <RankTableCell>
                     <ValueWrapper>
                       <FCTIcon />
-                      <FCTValue>888888.888888</FCTValue>
+                      <FCTValue>12,521</FCTValue>
                     </ValueWrapper>
                   </RankTableCell>
                   <RankTableCell>

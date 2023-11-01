@@ -9,7 +9,7 @@ export const EventDetailContainer = styled.div`
   justify-content: center;
 
   @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMaxWidth}) {
-    padding: 50px 120px;
+    padding: 50px 50px;
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.sizes.mediaMobileWidth}) {

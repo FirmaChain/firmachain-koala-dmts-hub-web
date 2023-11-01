@@ -3,6 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 
 interface IScreenContext {
   isSmall: boolean;
+  isXSmall: boolean;
   isMobile: boolean;
   isDesktopNavCollapsed: boolean;
   isMobilNavCollapsed: boolean;
@@ -16,6 +17,7 @@ export const ScreenContext = React.createContext<IScreenContext | null>(null);
 
 const ScreenProvider = ({ children }) => {
   const isSmall = useMediaQuery({ query: '(max-width: 1500px)' });
+  const isXSmall = useMediaQuery({ query: '(max-width: 1200px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
 
   const [isDesktopNavCollapsed, setIsDesktopNavCollapsed] = useState<boolean>(false);
@@ -28,6 +30,7 @@ const ScreenProvider = ({ children }) => {
       value={{
         isHide,
         isSmall,
+        isXSmall,
         isMobile,
         isDesktopNavCollapsed,
         isMobilNavCollapsed,

@@ -5,6 +5,7 @@ const useScreen = () => {
   const {
     isMobile,
     isSmall,
+    isXSmall,
     isDesktopNavCollapsed,
     isMobilNavCollapsed,
     isHide,
@@ -37,6 +38,7 @@ const useScreen = () => {
     isHide,
     isMobile,
     isSmall,
+    isXSmall,
     isDesktopNavCollapsed,
     isMobilNavCollapsed,
     collapsedNavDesktop,

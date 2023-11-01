@@ -13,7 +13,7 @@ export const QuestContainer = styled.div`
   align-items: center;
 
   @media only screen and (min-width: ${questMobilScreen}) and (max-width: ${questSmallScreen}) {
-    padding: 70px 120px;
+    padding: 70px 50px;
   }
 
   @media only screen and (max-width: ${questMobilScreen}) {
@@ -50,7 +50,6 @@ export const QuestWrapper = styled.div`
   justify-content: center;
   align-items: stretch;
   gap: 40px;
-
   padding: 40px 0;
   @media only screen and (max-width: ${questSmallScreen}) {
     flex-direction: column;
@@ -67,8 +66,12 @@ export const LeftContainer = styled.div`
   align-items: center;
 
   @media only screen and (min-width: ${questMobilScreen}) and (max-width: ${questSmallScreen}) {
-    flex-direction: row;
     align-items: flex-start;
+    width: 100%;
+    gap: 50px;
+    & > div:nth-child(1) {
+      width: 300px;
+    }
     & > div:nth-child(2) {
       width: 300px;
     }
@@ -217,6 +220,10 @@ export const QuestItem = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.questBorder};
   border-radius: 20px;
   background: ${({ theme }) => theme.colors.white};
+
+  @media only screen and (min-width: ${questMobilScreen}) and (max-width: ${questSmallScreen}) {
+    max-width: 100%;
+  }
 `;
 
 export const QuestTopWrapper = styled.div<{ $src: string }>`
@@ -327,6 +334,9 @@ export const QuestBottomWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+  @media only screen and (min-width: ${questMobilScreen}) and (max-width: ${questSmallScreen}) {
+    min-height: 500px;
+  }
 `;
 
 export const QuestSubLabel = styled.div`

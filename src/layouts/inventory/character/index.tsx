@@ -1,8 +1,11 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 import useTheme from '../../../hooks/useTheme';
 
 import Tooltip from '../../../components/tooltip';
+import { rootState } from '../../../redux/reducers';
+import { stringToSeed } from '../../../utils/common';
 
 import {
   CharacterWrapper,
@@ -31,7 +34,7 @@ interface IProps {
 
 const Character = ({ activeSendModal }: IProps) => {
   const { theme } = useTheme();
-
+  const { address } = useSelector((state: rootState) => state.wallet);
   return (
     <CharacterWrapper>
       <TooltipWrapper $activeModal={activeSendModal}>
@@ -50,7 +53,7 @@ const Character = ({ activeSendModal }: IProps) => {
             </ChracterInfo>
           ) : (
             <ChracterInfo>
-              <CharacterInfoTypo>Lv 50. koala knight</CharacterInfoTypo>
+              <CharacterInfoTypo>Lv 1. {`Koala #${stringToSeed(address)}`}</CharacterInfoTypo>
               <CharacterBorderLine src={theme.urls.borderLine} />
               <EquipTypo>Equipped Item</EquipTypo>
             </ChracterInfo>

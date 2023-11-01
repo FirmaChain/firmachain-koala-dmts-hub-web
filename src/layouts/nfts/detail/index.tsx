@@ -165,14 +165,14 @@ const NftDetail = () => {
                   <HistoryTableCell>
                     <PriceWrapper>
                       <FCTIconMini />
-                      88888.88888
+                      30.22212
                     </PriceWrapper>
                   </HistoryTableCell>
                   <HistoryTableCell>
-                    <HistoryFromTypo>0xEbf0...7f0d</HistoryFromTypo>
+                    <HistoryFromTypo>firmaEbf0...7f0d</HistoryFromTypo>
                   </HistoryTableCell>
                   <HistoryTableCell>
-                    <HistoryToTypo>0xEbf0...7f0d</HistoryToTypo>
+                    <HistoryToTypo>firmaEbf0...7f0d</HistoryToTypo>
                   </HistoryTableCell>
                   <HistoryTableCell>
                     <HistoryTimeTypo>42 minutes ago</HistoryTimeTypo>
@@ -192,14 +192,14 @@ const NftDetail = () => {
                     <HistoryTableCell>
                       <PriceWrapper>
                         <FCTIconMini />
-                        88888.88888
+                        10.15202
                       </PriceWrapper>
                     </HistoryTableCell>
                     <HistoryTableCell>
-                      <HistoryFromTypo>0xEbf0...7f0d</HistoryFromTypo>
+                      <HistoryFromTypo>firmaEbf0...7f0d</HistoryFromTypo>
                     </HistoryTableCell>
                     <HistoryTableCell>
-                      <HistoryToTypo>0xEbf0...7f0d</HistoryToTypo>
+                      <HistoryToTypo>firmaEbf0...7f0d</HistoryToTypo>
                     </HistoryTableCell>
                     <HistoryTableCell>
                       <HistoryTimeTypo>42 minutes ago</HistoryTimeTypo>
