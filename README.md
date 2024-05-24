@@ -1,6 +1,6 @@
-# firmachain-koala-hub-web
+# firmachain-koala-dmts-hub-web
 
- ![firmachain-koala-dmts-hub-web](https://github.com/FirmaChain/firmachain-koala-dmts-hub-web/assets/93503020/6147fd13-46dc-40ef-ae01-dbe14816d34f)
+![firmachain-koala-dmts-hub-web](https://github.com/FirmaChain/firmachain-koala-dmts-hub-web/assets/93503020/3ed49bea-eefc-4376-aeeb-298c52235f0a)
 
 <br>
 
