@@ -51,6 +51,20 @@ const RightStage = ({
     } else {
       setActiveRight(false);
       window.location.href = `koalaknights://${accessToken}`;
+
+      // const childWindow = window.open(CHAIN_CONFIG.GAME, 'childWindow');
+
+      // window.addEventListener(
+      //   'message',
+      //   (event) => {
+      //     if (event.origin !== CHAIN_CONFIG.GAME) return;
+
+      //     console.log('READY FOR PARENTS');
+
+      //     if (event.data === 'ready') childWindow.postMessage(accessToken, CHAIN_CONFIG.GAME);
+      //   },
+      //   false
+      // );
     }
   };
 

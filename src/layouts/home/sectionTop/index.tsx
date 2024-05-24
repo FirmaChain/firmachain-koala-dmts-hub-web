@@ -43,8 +43,6 @@ import {
   QuestSubTypo,
   FCTLogo,
   PoweredByWrapper,
-  PoweredByTypo,
-  PoweredByValueTypo,
   BackgroundLogoImage,
   SigninTypo,
 } from './styles';
@@ -97,11 +95,8 @@ const SectionTop = () => {
           <SubLogoContainer onClick={() => window.open(FIRMACHAIN)}>
             <SubLogoImage1 src={theme.urls.homeSectionTopLogoSub1} />
             <SubLogoImage2 src={theme.urls.homeSectionTopLogoSub2} />
-            <FCTLogo src={theme.urls.homeSectionTopLogoFCT} />
-            <PoweredByWrapper>
-              <PoweredByTypo>Powered by</PoweredByTypo>
-              <PoweredByValueTypo src={theme.urls.homeSectionTopLogoFirma} />
-            </PoweredByWrapper>
+            <FCTLogo src={theme.urls.homeSectionTopLogoDMTS} />
+            <PoweredByWrapper></PoweredByWrapper>
           </SubLogoContainer>
           <Character1 />
           <Character2 />

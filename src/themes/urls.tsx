@@ -37,6 +37,7 @@ const urls = {
   homeSectionTopLogo: process.env.PUBLIC_URL + '/images/img_home_top_logo.svg',
   homeSectionTopLogoSub1: process.env.PUBLIC_URL + '/images/img_home_top_logo_bubble1.svg',
   homeSectionTopLogoSub2: process.env.PUBLIC_URL + '/images/img_home_top_logo_bubble2.svg',
+  homeSectionTopLogoDMTS: process.env.PUBLIC_URL + '/images/img_dmts_logo.png',
   homeSectionTopLogoFCT: process.env.PUBLIC_URL + '/images/img_home_top_logo_fct.svg',
   homeSectionTopLogoFCT2: process.env.PUBLIC_URL + '/images/img_home_top_logo_fct2.svg',
   homeSectionTopLogoFCT3: process.env.PUBLIC_URL + '/images/img_home_top_logo_fct3.svg',

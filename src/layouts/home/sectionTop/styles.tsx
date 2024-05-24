@@ -117,14 +117,11 @@ export const SubLogoImage2 = styled(ReactSVG)`
   right: 0;
 `;
 
-export const FCTLogo = styled(ReactSVG)`
-  svg {
-    width: 40px;
-    height: 60px;
-  }
+export const FCTLogo = styled.img`
   position: absolute;
-  top: 3px;
-  left: 16px;
+  top: 12px;
+  left: 36px;
+  z-index: 2;
 `;
 
 export const PoweredByWrapper = styled.div`
