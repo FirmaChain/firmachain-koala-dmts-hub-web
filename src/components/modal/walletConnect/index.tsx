@@ -83,8 +83,7 @@ const WalletConnectModal = () => {
               <WalletConnectTopWrapper>
                 <WalletConnectTitleTypo>What is Firma station?</WalletConnectTitleTypo>
                 <WalletConnectSubTitleTypo>
-                  For 15 years, our beloved Calibri was Microsoft’s default font and crown keeper of office
-                  communications
+                  Firma Station is the decentralized wallet of FIRMACHAIN.
                 </WalletConnectSubTitleTypo>
                 <QrWrapper>
                   <DownloadQR>Download QR</DownloadQR>
